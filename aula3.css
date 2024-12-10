@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho{
+    padding: 2rem 0 2rem 7rem;
+    background-color:rgb(83, 83, 169)
+}
+
+.cabecalho_flex{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+}
+.cabecalho_flex_links:hover{
+    text-decoration: underline;
+}
+.cabecalho_flex_links{
+    color:rgb(230, 230, 230);
+    font-size: 1.25rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#ffffff;
+    color: black;
+}
+
+main{
+    flex: 1;
+}
+.main_flex{
+    display:flex;
+    margin: 7rem 7rem;
+    gap: 3.125rem;
+    align-items: center;
+}
+
+.section_flex{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction:column;
+    align-items: center;
+}
+.titulo{
+    font-size: 1.875rem;
+    text-align: justify;
+    font-family:'krona one', sans-serif ;
+}
+.paragrafo{
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: 'montserrat', sans-serif;
+}
+.flex_h2_a{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+.semi_botom:hover{
+    background-color: rgb(46, 63, 141);
+}
+.semi_botom{
+    background-color :rgb(62, 76, 139);
+    width: 15.625rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+
+}
+.rodapee{
+    padding:1.5rem;
+    background-color:rgb(83, 83, 169);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f2f2f2;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+}
+strong { color :rgb(62, 76, 139)}
+@media (max-width:768px){
+    
+    .cabecalho_flex{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;     
+    }
+    .main_flex{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
